@@ -14,5 +14,15 @@ namespace APlus_Mobile
         {
             InitializeComponent();
         }
+
+        private async void Button_Registr_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Reg());
+        }
+
+        private async void Button_Login_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ProjectsPage());
+        }
     }
 }

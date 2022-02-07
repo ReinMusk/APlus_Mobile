@@ -1,24 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="APlus_Mobile.MainPage">
+             x:Class="APlus_Mobile.MainPage"
+             Visual="Material">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+    <StackLayout BackgroundColor="White" >
+
+        <StackLayout BackgroundColor="White">
+            <Image Source="image.jpg" Margin="30"/>
+            <StackLayout Margin="40,0,40,40">
+                <Frame
+                    Padding="0">
+                    <Entry FontSize="16" x:Name="main_txt_login" BackgroundColor="#E8E8E8" TextColor="Black" Placeholder="Логин"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout Margin="40,0,40,40">
+                <Frame
+                    Padding="0">
+                    <Entry FontSize="16" x:Name="main_txt_password" BackgroundColor="#E8E8E8" IsPassword ="True" Placeholder="Пароль" TextColor="Black"/>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" FlexLayout.AlignSelf="Start">
+            <Button CornerRadius="50" FontSize="11" Text="Зарегистрироваться" FontFamily="FelixFont" Clicked="Button_Registr_Clicked" BackgroundColor="#00B2FF"/>
+            <Button CornerRadius="50" FontSize="11" Text="Войти" FontFamily="FelixFont" Clicked="Button_Login_Clicked" BackgroundColor="#00B2FF"/>
+        </StackLayout>
+
     </StackLayout>
 
 </ContentPage>
