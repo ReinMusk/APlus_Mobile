@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using SQLite;
 
-namespace MobileApp
+namespace APlus_Mobile
 {
     public class ProjectRepository
     {

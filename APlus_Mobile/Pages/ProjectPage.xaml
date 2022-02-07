@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:MobileApp"
+            x:Class="APlus_Mobile.ProjectPage"
+            Visual="Material">
+    
+    <NavigationPage.TitleView>
+        <Label x:Name="proj_title"  FontSize="Large" TextColor="White"  Margin="75,0"></Label>
+    </NavigationPage.TitleView>
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem
+            IconImageSource="Edit.png"
+            Order="Primary"/> <!-- Clicked="Edit_Clicked"--> 
+    </TabbedPage.ToolbarItems>
+    
+    <TabbedPage.Children>
+        <local:Info />
+        <local:Images />
+        <local:Contacts />
+    </TabbedPage.Children>
+</TabbedPage>
