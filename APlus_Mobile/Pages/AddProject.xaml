@@ -10,7 +10,7 @@
     
     <ContentPage.Content >
         <ScrollView>
-            <StackLayout BackgroundColor="White">
+            <StackLayout >
                 <Frame Margin="40,40,40,30"
                    Padding="0" BorderColor="#E8E8E8">
                     <Entry Text="{Binding Name}" FontFamily="FelixFont" x:Name="txt_AddName" BackgroundColor="#E8E8E8" Placeholder="Имя проекта" TextColor="Black" />

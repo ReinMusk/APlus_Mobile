@@ -28,6 +28,8 @@ namespace APlus_Mobile
         {
             InitializeComponent();
 
+            Current.UserAppTheme = OSAppTheme.Light;
+
             MainPage = new NavigationPage(new MainPage());
         }
 

@@ -5,7 +5,7 @@
              Title="Картинки"
              Visual="Material"
              >
-    <Grid BackgroundColor="White">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>

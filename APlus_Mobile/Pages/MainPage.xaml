@@ -4,9 +4,9 @@
              x:Class="APlus_Mobile.MainPage"
              Visual="Material">
 
-    <StackLayout BackgroundColor="White" >
+    <StackLayout>
 
-        <StackLayout BackgroundColor="White">
+        <StackLayout>
             <Image Source="image.jpg" Margin="30"/>
             <StackLayout Margin="40,0,40,40">
                 <Frame

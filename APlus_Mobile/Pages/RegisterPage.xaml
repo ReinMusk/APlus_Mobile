@@ -17,8 +17,8 @@
                     </Frame>
 
                     <Frame  Grid.Row="1" Margin="40,0,40,40"
-                    Padding="0" BorderColor="#E8E8E8">
-                        <Entry FontFamily="FelixFont" x:Name="txt_email" BackgroundColor="#E8E8E8" Placeholder="Email" TextColor="Black"/>
+                    Padding="0" BorderColor="#E8E8E8" BackgroundColor="#E8E8E8">
+                        <Entry FontFamily="FelixFont" x:Name="txt_email"  Placeholder="Email" TextColor="Black"/>
                     </Frame>
 
                     <Frame  Grid.Row="2" Margin="40,0,40,40"

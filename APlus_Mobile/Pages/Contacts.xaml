@@ -6,7 +6,7 @@
              Visual="Material">
     
     <ContentPage.Content >
-        <StackLayout BackgroundColor="White">
+        <StackLayout>
             <Frame  Margin="40,40,40,40"
                     Padding="0" BorderColor="#E8E8E8">
                 <Entry FontFamily="FelixFont" x:Name="txt_contc_tel1" BackgroundColor="#E8E8E8" Placeholder="Телефон1" TextColor="Black" />

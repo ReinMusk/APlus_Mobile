@@ -17,7 +17,7 @@ namespace APlus_Mobile
 
         private async void Button_Registr_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Reg());
+            await Navigation.PushAsync(new RegisterPage());
         }
 
         private async void Button_Login_Clicked(object sender, EventArgs e)

@@ -5,7 +5,7 @@
              Title="О проекте"
              Visual="Material">
     
-    <Grid BackgroundColor="White">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition ></RowDefinition>
             <RowDefinition ></RowDefinition>
