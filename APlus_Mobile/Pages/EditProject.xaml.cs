@@ -30,14 +30,40 @@ namespace APlus_Mobile
             this.Navigation.PopAsync();
         }
 
-        private void ButtonSave_Clicked(object sender, EventArgs e)
+        private async void ButtonSave_Clicked(object sender, EventArgs e)
         {
-            var proj = (Project)BindingContext;
-            if (!String.IsNullOrEmpty(proj.Name))
+            bool result = await DisplayAlert("Подтвердить действие", $"Вы точно хотите изменить \n{project.Name}?", "Да", "Нет");
+
+            if (result == true)
             {
-                App.Database.SaveItem(proj);
+                try
+                {
+                    var proj = (Project)BindingContext;
+                    if (!String.IsNullOrEmpty(proj.Name))
+                    {
+                        App.Database.SaveItem(proj);
+                    }
+                }
+                catch (Exception)
+                {
+                    _ = DisplayAlert("Подтвердить действие", "Укажите имя", "Ок");
+                }
             }
-            this.Navigation.PopAsync();
+            
+            await this.Navigation.PopAsync();
+        }
+
+        private async void Delete_Clicked(object sender, EventArgs e)
+        {
+            bool result = await DisplayAlert("Подтвердить действие", $"Вы точно хотите удалить \n{project.Name}?", "Да", "Нет");
+
+            if (result == true)
+            {
+                App.database.DeleteItem(project.Id);
+            }
+
+            ProjectsPage projectsPage = new ProjectsPage();
+            await Navigation.PushAsync(projectsPage);
         }
     }
 }

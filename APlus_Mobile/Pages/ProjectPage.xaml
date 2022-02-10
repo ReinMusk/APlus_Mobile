@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:APlus_Mobile" xmlns:local1="clr-namespace:APlus_Mobile"
             x:Class="APlus_Mobile.ProjectPage"
             Visual="Material">
-    
+
     <NavigationPage.TitleView>
         <Label x:Name="proj_title"  FontSize="Large" TextColor="White"  Margin="75,0"></Label>
     </NavigationPage.TitleView>
@@ -11,7 +11,6 @@
         <ToolbarItem
             IconImageSource="Edit.png"
             Order="Primary" Clicked="Edit_Clicked"/>
-        <!--Clicked="Edit_Clicked"-->
     </TabbedPage.ToolbarItems>
     
     <TabbedPage.Children>

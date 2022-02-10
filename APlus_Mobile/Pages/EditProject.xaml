@@ -7,6 +7,11 @@
     <NavigationPage.TitleView>
         <Label Text="Изменить проект" FontSize="24" TextColor="White"  Margin="20,0"/>
     </NavigationPage.TitleView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            IconImageSource="Delete.png"
+            Order="Primary" Clicked="Delete_Clicked"/>
+    </ContentPage.ToolbarItems>
 
     <ContentPage.Content >
         <ScrollView>
