@@ -27,22 +27,16 @@ namespace APlus_Mobile
         private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             Project selectedProject = (Project)e.SelectedItem;
-            ProjectPage projectPage = new ProjectPage();
-            projectPage.BindingContext = selectedProject;
+            ProjectPage projectPage = new ProjectPage(selectedProject);
             await Navigation.PushAsync(projectPage);
         }
 
         private async void CreateProject(object sender, EventArgs e)
         {
-            Project friend = new Project();
-            AddProject friendPage = new AddProject();
-            friendPage.BindingContext = friend;
-            await Navigation.PushAsync(friendPage);
-        }
-
-        private async void CreateProject_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new AddProject());
+            Project proj = new Project();
+            AddProject projPage = new AddProject();
+            projPage.BindingContext = proj;
+            await Navigation.PushAsync(projPage);
         }
     }
 }

@@ -12,15 +12,19 @@ namespace APlus_Mobile
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProjectPage : TabbedPage
     {
-        public ProjectPage()
+        Project project;
+        public ProjectPage(Project newProj)
         {
             InitializeComponent();
-            //proj_title.Text;
+
+            project = newProj;
+            proj_title.Text = project.Name;
         }
 
-        //private async void Edit_Clicked(object sender, EventArgs e)
-        //{
-        //    await Navigation.PushAsync();
-        //}
+        private async void Edit_Clicked(object sender, EventArgs e)
+        {
+            EditProject editProjectPage = new EditProject(project);
+            await Navigation.PushAsync(editProjectPage);
+        }
     }
 }
