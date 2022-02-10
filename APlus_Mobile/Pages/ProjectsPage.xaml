@@ -5,7 +5,7 @@
              Visual="Material">
     
     <NavigationPage.TitleView>
-        <Label Text="Проекты" FontSize="24" TextColor="White"  Margin="40,0"/>
+        <Label Text="Проекты" FontSize="24" TextColor="White"  Margin="60,0"/>
     </NavigationPage.TitleView>
     <ContentPage.ToolbarItems>
         <ToolbarItem

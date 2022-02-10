@@ -4,7 +4,7 @@
              x:Class="APlus_Mobile.Info"
              Title="О проекте"
              Visual="Material">
-    
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition ></RowDefinition>
@@ -13,8 +13,12 @@
             <RowDefinition ></RowDefinition>
             <RowDefinition ></RowDefinition>
         </Grid.RowDefinitions>
-        <StackLayout>
-            <Label x:Name="projDesc"/>
-        </StackLayout>
+        
+        <ScrollView>
+            <StackLayout>
+                <Label Grid.Row="0" Text="Описание:" HorizontalTextAlignment="Center" Margin="0,40,0,0" FontSize="Large" FontFamily="FelixFont"/>
+                <Label Grid.Row="1" x:Name="projDesc" HorizontalTextAlignment="Center" Margin="0,20,0,0" FontSize="Large" FontFamily="FelixFont"/>
+            </StackLayout>
+        </ScrollView>
     </Grid>
 </ContentPage>

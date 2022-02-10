@@ -5,7 +5,7 @@
             Visual="Material">
 
     <NavigationPage.TitleView>
-        <Label x:Name="proj_title"  FontSize="Large" TextColor="White"  Margin="75,0"></Label>
+        <Label x:Name="proj_title" FontFamily="FelixFont" FontSize="Large" TextColor="White"  Margin="75,0"></Label>
     </NavigationPage.TitleView>
     <TabbedPage.ToolbarItems>
         <ToolbarItem

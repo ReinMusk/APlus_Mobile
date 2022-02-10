@@ -19,5 +19,10 @@ namespace APlus_Mobile
             project = newProj;
             projDesc.Text = project.Description;
         }
+
+        public Info()
+        {
+            InitializeComponent();
+        }
     }
 }
