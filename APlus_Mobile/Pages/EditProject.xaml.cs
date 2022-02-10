@@ -43,14 +43,13 @@ namespace APlus_Mobile
                     {
                         App.Database.SaveItem(proj);
                     }
+                    await this.Navigation.PopAsync();
                 }
                 catch (Exception)
                 {
                     _ = DisplayAlert("Подтвердить действие", "Укажите имя", "Ок");
                 }
             }
-            
-            await this.Navigation.PopAsync();
         }
 
         private async void Delete_Clicked(object sender, EventArgs e)
@@ -60,10 +59,9 @@ namespace APlus_Mobile
             if (result == true)
             {
                 App.database.DeleteItem(project.Id);
+                ProjectsPage projectsPage = new ProjectsPage();
+                await Navigation.PushAsync(projectsPage);
             }
-
-            ProjectsPage projectsPage = new ProjectsPage();
-            await Navigation.PushAsync(projectsPage);
         }
     }
 }

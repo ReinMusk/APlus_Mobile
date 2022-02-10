@@ -11,11 +11,13 @@ namespace APlus_Mobile
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Info : ContentPage
     {
-        public Info()
+        Project project;
+        public Info(Project newProj)
         {
             InitializeComponent();
 
-            //projDesc
+            project = newProj;
+            projDesc.Text = project.Description;
         }
     }
 }

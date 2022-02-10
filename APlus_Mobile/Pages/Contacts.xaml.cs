@@ -11,9 +11,17 @@ namespace APlus_Mobile
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Contacts : ContentPage
     {
-        public Contacts()
+
+        Project project;
+        public Contacts(Project newProj)
         {
             InitializeComponent();
+
+            project = newProj;
+
+            txt_ContAdress.Text = project.Address;
+            txt_ContEmail.Text = project.Email;
+            txt_contc_tel.Text = project.Number;
         }
     }
 }
