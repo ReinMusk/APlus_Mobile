@@ -4,7 +4,7 @@
              x:Class="MobileDbPic.SelectedImg">
     <ContentPage.Content>
         <StackLayout Padding="30" Spacing="30">
-            <Entry Text="{Binding Name}" Placeholder="Name"/>
+            <Entry Text="{Binding Name}" Placeholder="Name" IsReadOnly="True"/>
             <Image Source="{Binding PathImage}" WidthRequest="700" HeightRequest="400"/>
         </StackLayout>
     </ContentPage.Content>
