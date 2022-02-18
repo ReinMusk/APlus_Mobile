@@ -9,6 +9,7 @@ namespace APlus_Mobile
     [Table("Projects")]
     public class Project
     {
+        public static Project globProj;
         [PrimaryKey, AutoIncrement, Column("_id")]
         public int Id { get; set; }
         public string Name { get; set; }

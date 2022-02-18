@@ -27,6 +27,7 @@ namespace APlus_Mobile
         private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             Project selectedProject = (Project)e.SelectedItem;
+            Project.globProj = selectedProject;
             ProjectPage projectPage = new ProjectPage(selectedProject);
             await Navigation.PushAsync(projectPage);
         }

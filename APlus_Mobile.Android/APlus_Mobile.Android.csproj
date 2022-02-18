@@ -84,7 +84,7 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Edit.png" />
+    <AndroidResource Include="Resources\drawable\project.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\APlus_Mobile\APlus_Mobile.csproj">
@@ -99,10 +99,10 @@
     <AndroidResource Include="Resources\drawable\Plus.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\project.png" />
+    <AndroidResource Include="Resources\drawable\delete.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\delete.png" />
+    <AndroidResource Include="Resources\drawable\Edit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
