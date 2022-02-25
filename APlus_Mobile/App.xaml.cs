@@ -30,6 +30,7 @@ namespace APlus_Mobile
 
             MainPage = new NavigationPage(new MainPage());
 
+
             Application.Current.UserAppTheme = OSAppTheme.Light;
         }
 
