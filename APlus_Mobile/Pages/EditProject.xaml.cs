@@ -32,18 +32,28 @@ namespace APlus_Mobile
 
         private async void ButtonSave_Clicked(object sender, EventArgs e)
         {
+            Project proj = new Project
+            {
+                Id = project.Id,
+                Name = txt_AddName.Text,
+                Description = txt_AddDescription.Text,
+                Number = txt_AddTel.Text,
+                Email = txt_AddEmail.Text,
+                Address = txt_AddAdress.Text
+            };
+
             bool result = await DisplayAlert("Подтвердить действие", $"Вы точно хотите изменить \n{project.Name}?", "Да", "Нет");
 
             if (result == true)
             {
                 try
                 {
-                    var proj = (Project)BindingContext;
                     if (!String.IsNullOrEmpty(proj.Name))
                     {
                         App.Database.SaveItem(proj);
                     }
-                    await this.Navigation.PopAsync();
+                    ProjectsPage projectsPage = new ProjectsPage();
+                    await Navigation.PushAsync(projectsPage);
                 }
                 catch (Exception)
                 {

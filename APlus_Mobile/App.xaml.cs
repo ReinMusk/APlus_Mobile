@@ -28,9 +28,9 @@ namespace APlus_Mobile
         {
             InitializeComponent();
 
-            Current.UserAppTheme = OSAppTheme.Light;
-
             MainPage = new NavigationPage(new MainPage());
+
+            Application.Current.UserAppTheme = OSAppTheme.Light;
         }
 
         protected override void OnStart()

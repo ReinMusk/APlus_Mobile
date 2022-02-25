@@ -31,7 +31,7 @@
                         <Entry FontFamily="FelixFont" x:Name="txt_password2" BackgroundColor="#E8E8E8" IsPassword ="True" Placeholder="Пароль" TextColor="Black"/>
                     </Frame>
 
-                    <Button Padding="30,0,40,20" Margin="30" Grid.Row="4" Text="Зарегистрироваться" CornerRadius="50"  Clicked="Button_Clicked" HorizontalOptions="CenterAndExpand" BackgroundColor="#00B2FF"/>
+                    <Button Padding="30,0,40,0" Margin="30" Grid.Row="4" Text="Зарегистрироваться" CornerRadius="50"  Clicked="Button_Clicked" HorizontalOptions="CenterAndExpand" BackgroundColor="#00B2FF"/>
                 </StackLayout>
             </StackLayout>
       

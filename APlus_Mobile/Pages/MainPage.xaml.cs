@@ -13,6 +13,8 @@ namespace APlus_Mobile
         public MainPage()
         {
             InitializeComponent();
+
+            OSAppTheme currentTheme = Application.Current.RequestedTheme;
         }
 
         private async void Button_Registr_Clicked(object sender, EventArgs e)
